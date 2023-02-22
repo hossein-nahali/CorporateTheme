@@ -29,6 +29,7 @@ export const Css = (type, disabled, colors) => {
       align-content: center;
       justify-content: center;
       background-color: ${tertiary.hex};
+      cursor: pointer;
 
       svg {
         fill: ${!disabled ? secondary.hex : helper_blue_3.hex};
