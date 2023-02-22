@@ -1,0 +1,22 @@
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin reset-list() {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+@mixin reset-link() {
+  text-decoration: none;
+}
