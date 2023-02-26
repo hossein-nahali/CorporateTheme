@@ -1,36 +1,27 @@
 import {css} from "@emotion/css";
 
-export const RightText = (colors, isMobile) => {
-    const {primary, background, black, white, grey, shadow_card_3} = colors
+export const RightTextMobileLargeIcon = (colors, isMobile) => {
+    const {primary, black, grey} = colors
     const style = css`
       padding: 46px 35px;
-      box-shadow: ${shadow_card_3};
-      border-radius: 6px;
       max-width: calc(330px - 50px);
-      background-color: ${white.hex};
       align-content: flex-start;
 
       .icon {
-        padding: 14px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        border: 1px solid ${background.hex};
-        border-radius: 12px;
         margin-bottom: 20px;
         width: fit-content;
 
         svg {
           fill: ${primary.hex};
-          width: 42px;
-          height: 42px;
+          width: 84px;
+          height: auto;
         }
       }
 
       h3 {
         font-weight: 700;
-        font-size: 22px;
-        line-height: 33px;
+        font-size: 20px;
+        line-height: 30px;
         color: ${black.hex};
         letter-spacing: -0.015em;
         margin: 0 0 16px;
@@ -39,8 +30,8 @@ export const RightText = (colors, isMobile) => {
 
       p {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 24px;
         margin: 0;
         color: ${grey.hex};
         text-align: left;
@@ -48,7 +39,7 @@ export const RightText = (colors, isMobile) => {
       }
 
       a {
-        margin-top: 30px;
+        margin-top: 20px;
         justify-content: flex-start !important;
       }
     `

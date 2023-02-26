@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {RightText, CenterText, StretchedRight, SmallCard, DefaultStyle} from './Assets/css/Index'
+import {RightText, CenterText, StretchedRight, SmallCard, DefaultStyle, RightTextMobile, RightTextMobileLargeIcon} from './Assets/css/Index'
 import {GeneralSettingThemeContext} from "../../../GeneralState/Index";
 import {Link} from './../Index'
 import {ArrowRight} from "../../Icons/Index";
@@ -7,6 +7,8 @@ import {ArrowRight} from "../../Icons/Index";
 export const ServicesCard = (props) => {
     // ⚡ types icon 👇👇 ⚡
     // right-text
+    // right-text-mobile
+    // right-text-mobile-large-icon
     // center-text
     // stretched-right
     // small-card
@@ -23,6 +25,8 @@ export const ServicesCard = (props) => {
     const css = (type) => {
         const styles = {
             "right-text": RightText(colors),
+            "right-text-mobile": RightTextMobile(colors),
+            "right-text-mobile-large-icon": RightTextMobileLargeIcon(colors),
             "center-text": CenterText(colors),
             "stretched-right": StretchedRight(colors),
             "small-card": SmallCard(colors),
