@@ -1,8 +1,7 @@
 import {Css} from "./Assets/css";
-import {ArrowLeft} from "../../Icons/ArrowLeft";
-import {ArrowRight} from "../../Icons/ArrowRight";
 import {useContext} from "react";
 import GeneralSettingThemeContext from "../../../GeneralState/Context/GeneralSettingThemeContext";
+import {ArrowLeft, ArrowRight} from "../../Icons/Index";
 
 export const ControlsDirection = (props) => {
     const {state} = useContext(GeneralSettingThemeContext)
