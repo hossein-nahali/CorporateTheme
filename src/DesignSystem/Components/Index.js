@@ -1,4 +1,5 @@
 export {Button} from './Button/Index'
 export {ControlsDirection} from './ControlsDirection/Index'
 export {Link} from './Link/Index'
+export {ServicesCard} from './ServicesCard/Index'
 export {Tag} from './Tag/Index'
