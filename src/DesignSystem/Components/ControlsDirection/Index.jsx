@@ -1,6 +1,6 @@
 import {Css} from "./Assets/css";
-import {Arrow_left} from "../../Icons/ArrowLeft";
-import {Arrow_right} from "../../Icons/ArrowRight";
+import {ArrowLeft} from "../../Icons/ArrowLeft";
+import {ArrowRight} from "../../Icons/ArrowRight";
 import {useContext} from "react";
 import GeneralSettingThemeContext from "../../../GeneralState/Context/GeneralSettingThemeContext";
 
@@ -14,8 +14,8 @@ export const ControlsDirection = (props) => {
 
     const GenerateIcon = () => {
         const icons = {
-            left: <Arrow_left/>,
-            right: <Arrow_right/>
+            left: <ArrowLeft/>,
+            right: <ArrowRight/>
         }
 
         return icons[direction]
