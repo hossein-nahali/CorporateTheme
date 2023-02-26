@@ -14,7 +14,13 @@ export const Button = (props) => {
     // circle-mobile
     // icon-button-mobile
     // outlined-button-with-icon
-    const {state} = useContext(GeneralSettingThemeContext)
+    // tab-small
+    // tab-small-no-fill
+    // tab-large
+    // tab-large-no-fill
+    // tab-large-mobile
+    // tab-large-no-fill-mobile
+    const {colors} = useContext(GeneralSettingThemeContext).state
     const {
         type = "fill",
         text,
@@ -23,17 +29,25 @@ export const Button = (props) => {
         bgPressed,
         boxShadow,
         disabled,
-        icon
+        icon,
+        href = '',
+        typeTag = 'button'
     } = props;
 
-    const css = cssBtn(type, bgColor, bgColorHover, boxShadow, bgPressed, disabled, state.colors)
+    const css = cssBtn(type, bgColor, bgColorHover, boxShadow, bgPressed, disabled, colors)
+
+    const TagType = (typeTag) => {
+        const tagType = {
+            "link": <a href={href}>{text && text}{icon && icon}</a>,
+            "button": <button disabled={disabled}>{text && text}{icon && icon}</button>
+        }
+
+        return tagType[typeTag]
+    }
 
     return (
         <div className={css}>
-            <button disabled={disabled}>
-                {text && text}
-                {icon && icon}
-            </button>
+            {TagType(typeTag)}
         </div>
     )
 }

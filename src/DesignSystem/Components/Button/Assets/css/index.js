@@ -1,7 +1,7 @@
 import {css} from "@emotion/css";
 
 export const cssBtn = (type, bgColor, bgColorHover, boxShadow, bgPressed, disabled, colors) => {
-    const {primary, black, white, hover_primary, grey, shadow_button} = colors
+    const {primary, black, white, hover_primary, grey, shadow_button, tertiary} = colors
 
     const style = {
         "fill": css`
@@ -317,48 +317,92 @@ export const cssBtn = (type, bgColor, bgColorHover, boxShadow, bgPressed, disabl
             }
           }
         `,
-        "s": css`
+        "tab-small": css`
           button {
-            min-width: 218px;
-            height: 54px;
-            cursor: pointer;
-            color: ${black.hex};
-            font-weight: 700;
-            font-size: 16px;
+            height: 32px;
+            background-color: ${bgColor ? bgColor : primary.hex};
+            font-weight: 600;
+            font-size: 14px;
             line-height: 24px;
-            background: none;
-
-            svg {
-              width: 24px;
-              height: 24px;
-              margin-right: 14px;
-              fill: ${black.hex};
-            }
-
-            &:hover {
-              color: ${primary.hex};
-
-              svg {
-                fill: ${primary.hex};
-              }
-            }
-
-            &:disabled {
-              cursor: unset;
-              box-shadow: none;
-              color: ${grey.hex};
-
-              svg {
-
-                fill: ${grey.hex};
-              }
-            }
+            border-radius: 6px;
+            color: ${white.hex};
+            cursor: pointer;
+            padding: 4px 10px !important;
           }
-        `
+        `,
+        "tab-small-no-fill": css`
+
+          button {
+            min-width: 41px;
+            height: 32px;
+            background-color: ${bgColor ? bgColor : white.hex};
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 6px;
+            color: ${primary.hex};
+            cursor: pointer;
+            border: 1px solid ${primary.hex} !important;
+            padding: 4px 10px !important;
+          }
+        `,
+        "tab-large": css`
+          button {
+            height: 46px;
+            background-color: ${bgColor ? bgColor : primary.hex};
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 20px;
+            color: ${white.hex};
+            cursor: pointer;
+            border: 1px solid ${primary.hex} !important;
+            padding: 16px 35px;
+          }
+        `,
+        "tab-large-mobile": css`
+          button {
+            height: 38px;
+            background-color: ${bgColor ? bgColor : primary.hex};
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 14px;
+            color: ${white.hex};
+            cursor: pointer;
+            border: 1px solid ${primary.hex} !important;
+            padding: 15px 20px;
+          }
+        `,
+        "tab-large-no-fill": css`
+          button {
+            height: 38px;
+            background-color: ${bgColor ? bgColor : tertiary.hex};
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 20px;
+            color: ${black.hex};
+            cursor: pointer;
+            padding: 16px 35px;
+          }
+        `,
+        "tab-large-no-fill-mobile": css`
+          button {
+            height: 38px;
+            background-color: ${bgColor ? bgColor : tertiary.hex};
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 14px;
+            color: ${black.hex};
+            cursor: pointer;
+            padding: 15px 20px;
+          }
+        `,
     }
 
     const staticCss = css`
-      padding: 10px 14px;
       display: flex;
       align-items: center;
       justify-content: center;

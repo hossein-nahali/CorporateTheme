@@ -1,6 +1,6 @@
 import {Css} from "./Assets/css";
-import {Arrow_left} from "../../Icons/arrow_left";
-import {Arrow_right} from "../../Icons/arrow_right";
+import {Arrow_left} from "../../Icons/ArrowLeft";
+import {Arrow_right} from "../../Icons/ArrowRight";
 import {useContext} from "react";
 import GeneralSettingThemeContext from "../../../GeneralState/Context/GeneralSettingThemeContext";
 
