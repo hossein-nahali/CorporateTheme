@@ -1,6 +1,7 @@
 import './App.scss';
 import {GeneralSettingTheme} from "./DesignSystem/GeneralSettingTheme";
-import {ControlsDirection} from "./DesignSystem/Components/ControlsDirection/Index";
+import {Link} from "./DesignSystem/Components/Link";
+import {ArrowLeft} from "./DesignSystem/Icons/ArrowLeft";
 
 function App() {
     GeneralSettingTheme()
@@ -8,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <ControlsDirection type={'desktop'} direction={'right'}/>
+                <Link text={'Read more'} icon={<ArrowLeft/>} href={'#'}/>
             </header>
         </div>
     );
