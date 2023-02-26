@@ -1,7 +1,7 @@
 import {css} from "@emotion/css";
 
 export const cssLink = (colors, type, isDisabled) => {
-    const {primary, secondary, grey, black, white, helper_blue_3, tertiary} = colors
+    const {primary, secondary, grey, black, white, helper_blue_3, tertiary, transition} = colors
 
     const underline = css`
       &:after {
@@ -14,7 +14,7 @@ export const cssLink = (colors, type, isDisabled) => {
         background-color: ${white.hex};
         border-radius: 5px;
         transform-origin: bottom left;
-        transition: all .3s ease;
+        transition: ${transition};
       }
     `
 
@@ -40,7 +40,7 @@ export const cssLink = (colors, type, isDisabled) => {
             svg {
               width: 20px;
               height: 20px;
-              transition: all .3s ease;
+              transition: ${transition};
               fill: ${!isDisabled ? primary.hex : grey.hex};
               margin-top: 3px;
               margin-left: 5px;
@@ -122,11 +122,11 @@ export const cssLink = (colors, type, isDisabled) => {
             display: flex;
             align-content: center;
             justify-content: center;
-            
+
             svg {
               width: 20px;
               height: 20px;
-              transition: all .3s ease;
+              transition: ${transition};
               fill: ${!isDisabled ? tertiary.hex : grey.hex};
               margin-top: 3px;
               margin-left: 5px;
@@ -152,7 +152,7 @@ export const cssLink = (colors, type, isDisabled) => {
       a {
         user-select: none;
         text-decoration: none;
-        transition: all .3s ease;
+        transition: ${transition};
       }
     `
 

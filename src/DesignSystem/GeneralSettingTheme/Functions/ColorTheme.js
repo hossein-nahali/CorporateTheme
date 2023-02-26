@@ -48,6 +48,7 @@ export const ColorTheme = {
             hex: "#FFFFFF",
             rgb: "255, 255, 255"
         },
+        transition: 'all .3s ease',
         shadow_button: '0px 12px 30px rgba(24, 92, 255, 0.18)',
         shadow_card_1: '0px 2px 20px 17px rgba(24, 92, 255, 0.04)',
         shadow_card_2: '0px 12px 30px 17px rgba(24, 92, 255, 0.04)',

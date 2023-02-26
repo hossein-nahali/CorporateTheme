@@ -1,7 +1,7 @@
 import {css} from "@emotion/css";
 
 export const cssBtn = (type, bgColor, bgColorHover, boxShadow, bgPressed, disabled, colors) => {
-    const {primary, black, white, hover_primary, grey, shadow_button, tertiary} = colors
+    const {primary, black, white, hover_primary, grey, shadow_button, tertiary, transition} = colors
 
     const style = {
         "fill": css`
@@ -406,10 +406,10 @@ export const cssBtn = (type, bgColor, bgColorHover, boxShadow, bgPressed, disabl
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all .3s ease;
+      transition: ${transition};
 
       button {
-        transition: all .3s ease;
+        transition: ${transition};
         border: none;
         display: flex;
         align-items: center;
@@ -420,7 +420,7 @@ export const cssBtn = (type, bgColor, bgColorHover, boxShadow, bgPressed, disabl
           width: 24px;
           height: 24px;
           margin-right: 14px;
-          transition: all .3s ease;
+          transition: ${transition};
         }
       }
     `
