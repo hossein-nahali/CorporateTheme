@@ -1,6 +1,6 @@
 import {css} from "@emotion/css";
 
-export const StretchedRight = (colors) => {
+export const StretchedRight = (colors, glassIcon) => {
     const {primary, shadow_card_3, white, grey, black} = colors
 
     const style = css`
@@ -17,9 +17,10 @@ export const StretchedRight = (colors) => {
         width: fit-content;
 
         svg {
-          fill: ${primary.hex};
+          fill: ${!glassIcon ? primary.hex : ''};
           width: 80px;
           height: auto;
+          display: block;
         }
       }
 

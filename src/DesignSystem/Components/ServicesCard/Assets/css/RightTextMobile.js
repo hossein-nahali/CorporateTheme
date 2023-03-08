@@ -1,6 +1,6 @@
 import {css} from "@emotion/css";
 
-export const RightTextMobile = (colors, isMobile) => {
+export const RightTextMobile = (colors, glassIcon) => {
     const {primary, background, black, white, grey, shadow_card_3} = colors
     const style = css`
       padding: 30px 25px;
@@ -21,9 +21,10 @@ export const RightTextMobile = (colors, isMobile) => {
         width: fit-content;
 
         svg {
-          fill: ${primary.hex};
+          fill: ${!glassIcon ? primary.hex : ''};
           width: 36px;
           height: 36px;
+          display: block;
         }
       }
 

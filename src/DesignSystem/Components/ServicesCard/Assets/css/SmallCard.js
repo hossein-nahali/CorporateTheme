@@ -1,6 +1,6 @@
 import {css} from "@emotion/css";
 
-export const SmallCard = (colors) => {
+export const SmallCard = (colors, glassIcon) => {
     const {primary, black, white, grey, shadow_card_3} = colors
     const style = css`
       padding: 25px;
@@ -16,9 +16,10 @@ export const SmallCard = (colors) => {
         width: fit-content;
 
         svg {
-          fill: ${primary.hex};
+          fill: ${!glassIcon ? primary.hex : ''};
           width: 45px;
           height: 45px;
+          display: block;
         }
       }
 

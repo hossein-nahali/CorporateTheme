@@ -1,4 +1,5 @@
 // clean export
+export {BotIsometric3d} from './BotIsometric3d'
 export {ArrowDown} from './ArrowDown'
 export {ArrowLeft} from './ArrowLeft'
 export {ArrowLeft24} from './ArrowLeft24'

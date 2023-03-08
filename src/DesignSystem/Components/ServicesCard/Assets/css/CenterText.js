@@ -1,6 +1,6 @@
 import {css} from "@emotion/css";
 
-export const CenterText = (colors) => {
+export const CenterText = (colors, glassIcon) => {
     const {primary, background, shadow_card_3, white, grey, black} = colors
     const style = css`
       padding: 35px;
@@ -21,9 +21,10 @@ export const CenterText = (colors) => {
         width: fit-content;
 
         svg {
-          fill: ${primary.hex};
+          fill: ${!glassIcon ? primary.hex : ''};
           width: 42px;
           height: 42px;
+          display: block;
         }
       }
 
