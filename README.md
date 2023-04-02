@@ -5,5 +5,5 @@ This project has been implemented with [this plan](https://www.figma.com/communi
 ## Cover:
 
 <div style="display:flex;flex-wrap:wrap;">
-<img src="https://raw.githubusercontent.com/hossein-nahali/CorporateTheme/master/screenshot/cover.png" style=" border-radius:5px"/>
+<img src="https://raw.githubusercontent.com/hossein-nahali/CorporateTheme/master/screenshot/cover.png"/>
 </div>
